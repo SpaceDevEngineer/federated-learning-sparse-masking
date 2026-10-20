@@ -25,7 +25,7 @@ We fine-tune a self-supervised **DINO ViT-S/16** on **CIFAR-100** with **Federat
 
 ## My contribution
 
-This was a four-person team project. I (**Temurbek Kuchkorov**) wrote all of the code in this repository and ran all of the experiments:
+This was a four-person team project. I (**Temur Kuchkorov**) wrote all of the code in this repository and ran all of the experiments:
 
 - **Federated learning pipeline:** FedAvg simulation with client sampling, local training and server-side aggregation, plus the IID and Non-IID (2 classes per client) data splits.
 - **Model setup:** loading the pre-trained DINO ViT-S/16 backbone and adding a linear classification head for CIFAR-100.
@@ -160,7 +160,7 @@ We found these issues when reviewing the code after submission. They don't chang
 | | |
 |---|---|
 | Javokhirbek Parpikhodjaev | [@pilotparpikhodjaev](https://github.com/pilotparpikhodjaev) |
-| Temurbek Kuchkorov | [@SpaceDevEngineer](https://github.com/SpaceDevEngineer) |
+| Temur Kuchkorov | [@SpaceDevEngineer](https://github.com/SpaceDevEngineer) |
 | Temurbek Karimov | [@timchenko69](https://github.com/timchenko69) |
 | Bekzod Kadirov | [@bekker18](https://github.com/bekker18) |
 
