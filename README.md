@@ -174,11 +174,16 @@ Original team repository: [pilotparpikhodjaev/ML_DL_FEDERATED_LEARNING_PROJECT](
 - Iurada et al., *Efficient Model Editing with Task-Localized Sparse Fine-tuning*, ICLR 2025
 - Zhao et al., *Federated Learning with Non-IID Data*, arXiv:1806.00582
 
+## Citation
+
 ```bibtex
 @misc{parpikhodjaev2025sparsefl,
-  title  = {Sparse Updates as a Regularizer in Federated Learning: An Experimental Study on Non-IID Data},
-  author = {Parpikhodjaev, Javokhirbek and Kuchkorov, Temurbek and Karimov, Temurbek and Kadirov, Bekzod},
+  title  = {Sparse Updates as a Regularizer in Federated Learning:
+            An Experimental Study on Non-IID Data},
+  author = {Parpikhodjaev, Javokhirbek and Kuchkorov, Temurbek and
+            Karimov, Temurbek and Kadirov, Bekzod},
   year   = {2025},
-  note   = {Course project, Machine Learning and Deep Learning, Politecnico di Torino}
+  note   = {Course project, Machine Learning and Deep Learning,
+            Politecnico di Torino}
 }
 ```
