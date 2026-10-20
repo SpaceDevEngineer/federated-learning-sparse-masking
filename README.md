@@ -23,6 +23,18 @@ We fine-tune a self-supervised **DINO ViT-S/16** on **CIFAR-100** with **Federat
 - Ran a small hyperparameter sweep over client participation `C` and local epochs `J` in the Non-IID setting.
 - **Main observation:** in our runs, random gradient masking beat the dense baseline by a wide margin in every setting (centralized 36.7% → 82.8%, IID 29.3% → 77.4%). The Fisher mask gave no clear gain over the baseline. See [Known issues](#known-issues--lessons-learned) for caveats.
 
+## My contribution
+
+This was a four-person team project. I (**Temurbek Kuchkorov**) wrote all of the code in this repository and ran all of the experiments:
+
+- **Federated learning pipeline:** FedAvg simulation with client sampling, local training and server-side aggregation, plus the IID and Non-IID (2 classes per client) data splits.
+- **Model setup:** loading the pre-trained DINO ViT-S/16 backbone and adding a linear classification head for CIFAR-100.
+- **Sparse fine-tuning:** gradient masking with a random (Bernoulli) mask and with a least-sensitive mask based on Fisher Information.
+- **Client selection:** each round, training the clients with the highest local loss.
+- **Experiments:** all centralized, IID and Non-IID runs and the C/J hyperparameter sweep, including logging the metrics and making the plots.
+
+The report ([`docs/report.pdf`](docs/report.pdf)) was written by the whole team.
+
 ## Results
 
 All numbers are top-1 accuracy (%) on CIFAR-100. The report's Table 1 does not always use the same metric for each row, so the table below shows exactly what the logs in this repository contain.
@@ -109,8 +121,7 @@ for name, p in model.named_parameters():
 │   ├── results_j4X_with_mask_c0{1,2,5}/  results_j8/  results_j16/   # C / J sweep
 │   └── comparison_accuracy.png  comparison_*_epoches.jpg
 ├── docs/
-│   ├── report.pdf                               # final project report
-│   └── project_assignment.pdf                   # original assignment
+│   └── report.pdf                               # final project report
 └── requirements.txt
 ```
 
