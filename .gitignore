@@ -1,0 +1,20 @@
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Artifacts created when the notebooks run
+data/
+dino/
+*.zip
+*.pth
+*.csv
+val_accuracy_curve.png
+centralized_accuracy_curve.png
